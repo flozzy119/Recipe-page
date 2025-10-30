@@ -1,0 +1,157 @@
+/* ===== Body ===== */
+body {
+  background-color: #f3e5d8;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ===== Card ===== */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Recipe Image ===== */
+.recipe-img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+/* ===== Content ===== */
+.content {
+  padding: 25px;
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #2e2c2b;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  color: #854632;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* ===== Description ===== */
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ===== Prep Time ===== */
+.prep-time {
+  background-color: #fff7fc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.prep-time h3 {
+  color: #7b284f;
+  margin-bottom: 10px;
+}
+
+.prep-time ul {
+  margin-left: 20px;
+  color: #444;
+}
+
+.prep-time ul li {
+  margin-bottom: 5px;
+}
+
+/* ===== Lists ===== */
+ul,
+ol {
+  margin-left: 25px;
+  line-height: 1.6;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* ===== Nutrition ===== */
+.nutrition-text {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.nutrition-table td:last-child {
+  color: #854632;
+  font-weight: 600;
+}
+
+.nutrition-table tr:hover {
+  background-color: #fdf0f5;
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 640px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  ul,
+  ol {
+    margin-left: 20px;
+  }
+
+  .prep-time ul {
+    margin-left: 15px;
+  }
+}
