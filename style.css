@@ -13,10 +13,10 @@ body {
 /* ===== Card ===== */
 .card {
   background-color: white;
-  border-radius: 20px;
-  max-width: 600px;
+  border-radius: 15px;
+  max-width: 550px;
   width: 100%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -28,47 +28,48 @@ body {
 /* ===== Recipe Image ===== */
 .recipe-img {
   width: 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
   display: block;
 }
 
 /* ===== Content ===== */
 .content {
-  padding: 25px;
+  padding:  20px 25px;
 }
 
 /* ===== Headings ===== */
 h1 {
   font-family: 'Young Serif', serif;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 0 0 8px;
   color: #2e2c2b;
 }
 
 h2 {
   font-family: 'Young Serif', serif;
   color: #854632;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin:20px 0 8px;
 }
 
 h3 {
-  margin: 0;
+  font-size: 18px;
+  color: #7b284f;
+  margin-bottom: 8px;
 }
 
 /* ===== Description ===== */
 .description {
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /* ===== Prep Time ===== */
 .prep-time {
   background-color: #fff7fc;
   border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 12px 15px;
+  margin-bottom: 18px;
 }
 
 .prep-time h3 {
@@ -77,7 +78,8 @@ h3 {
 }
 
 .prep-time ul {
-  margin-left: 20px;
+  margin: 0 0 0 20px;
+  padding: 0;
   color: #444;
 }
 
@@ -88,19 +90,20 @@ h3 {
 /* ===== Lists ===== */
 ul,
 ol {
-  margin-left: 25px;
-  line-height: 1.6;
+  margin: 8px 0 15px 22px;
+  padding: 0;
 }
 
 .instructions li {
-  margin-bottom: 10px;
-  font-weight: 500;
+  margin-bottom: 6px;
+  
 }
 
 /* ===== Nutrition ===== */
 .nutrition-text {
   color: #555;
-  margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .nutrition-table {
@@ -109,9 +112,9 @@ ol {
 }
 
 .nutrition-table td {
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ddd;
-  transition: all 0.3s ease;
+  font-size: 14px;
 }
 
 .nutrition-table td:last-child {
@@ -126,24 +129,24 @@ ol {
 /* ===== Responsive: Mobile ===== */
 @media (max-width: 640px) {
   body {
-    padding: 20px 10px;
+    padding: 25px 10px;
   }
 
   .card {
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .content {
-    padding: 20px;
+    padding: 18px;
   }
 
   ul,
@@ -154,4 +157,5 @@ ol {
   .prep-time ul {
     margin-left: 15px;
   }
+
 }
